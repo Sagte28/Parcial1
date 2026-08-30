@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RoshellBeauty — tienda en línea de maquillaje: labiales, sombras, brochas y más.">
+  <meta name="author" content="Said">
+  <title>RoshellBeauty — Tienda de Maquillaje</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <p class="barra-promo">Envío gratis a todo Colombia desde $150.000 · <a href="#contacto">Contacto</a></p>
+
+  <header>
+    <div class="header-marca">
+      <img src="img/logo.png" alt="Logotipo de RoshellBeauty, corona de flores rosadas con las iniciales R y B" class="logo">
+      <h1>RoshellBeauty</h1>
+    </div>
+
+    <div class="header-buscar">
+      <label for="buscador" class="visualmente-oculto">Buscar productos</label>
+      <input type="search" id="buscador" placeholder="Buscar productos...">
+      <button type="button" id="btn-buscar" aria-label="Buscar">🔍</button>
+    </div>
+
+    <div class="header-acciones">
+      <button id="btn-menu" type="button" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+      <a href="#contacto" class="icono-accion" aria-label="Mi cuenta">👤</a>
+      <button id="btn-carrito" type="button" class="icono-accion" aria-haspopup="true" aria-label="Ver carrito">
+        🛍️ <span id="contador-carrito">0</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="nav-principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Labiales</a>
+    <a href="#catalogo">Sombras</a>
+    <a href="#catalogo">Brochas</a>
+    <a href="#catalogo">Ojos</a>
+    <a href="#envios">Envíos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <p class="hero-etiqueta">Nueva colección</p>
+        <h2>Tu color, tu carácter</h2>
+        <p>Labiales, sombras y brochas elegidos para pieles y estilos reales.</p>
+        <a href="#catalogo" class="btn-cta">Ver catálogo</a>
+      </div>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <p>Explora nuestros productos y agrégalos a tu carrito.</p>
+      <div class="grid-productos" id="grid-productos" aria-live="polite">
+        <p class="cargando">Cargando productos...</p>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre nosotros</h2>
+      <div class="nosotros-contenido">
+        <img src="img/nosotros.png" alt="Ilustración de marca RoshellBeauty: un trazo de labial rosa sobre un círculo con borde dorado" class="nosotros-img">
+        <div class="nosotros-texto">
+          <p>RoshellBeauty nació de la pasión por el maquillaje accesible y de calidad. Seleccionamos
+            cada producto pensando en pieles y estilos distintos, para que encuentres tu tono ideal.</p>
+          <p>Somos una marca <span class="destacado">100% colombiana</span>, con envíos a todo el país.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="envios">
+      <h2>Envíos y pagos</h2>
+      <table>
+        <caption>Opciones de envío disponibles</caption>
+        <thead>
+          <tr>
+            <th scope="col">Método</th>
+            <th scope="col">Costo</th>
+            <th scope="col">Tiempo estimado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Envío estándar</td>
+            <td>$9.000 COP</td>
+            <td>3–5 días hábiles</td>
+          </tr>
+          <tr>
+            <td>Envío express</td>
+            <td>$18.000 COP</td>
+            <td>1–2 días hábiles</td>
+          </tr>
+          <tr>
+            <td>Recoge en tienda</td>
+            <td>Gratis</td>
+            <td>Mismo día</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form id="form-contacto" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ana Pérez" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ana@correo.com" required>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="300 123 4567">
+        </div>
+        <div class="campo">
+          <label for="fecha">Fecha preferida de contacto</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="campo">
+          <label for="asunto">Motivo</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">Selecciona una opción</option>
+            <option value="pedido">Consulta sobre un pedido</option>
+            <option value="producto">Pregunta sobre un producto</option>
+            <option value="reclamo">Reclamo o devolución</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <div class="campo campo-checkbox">
+          <label><input type="checkbox" id="terminos" name="terminos" required> Acepto ser contactada/o</label>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <p id="respuesta-form" role="status"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="anio"></span> — RoshellBeauty</p>
+    <p>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+      <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a> ·
+      <a href="mailto:contacto@roshellbeauty.co">Escríbenos</a>
+    </p>
+  </footer>
+
+  <div id="carrito-drawer" class="carrito-drawer" aria-hidden="true">
+    <div class="carrito-cabecera">
+      <h2>Tu carrito</h2>
+      <button id="btn-cerrar-carrito" type="button" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div id="lista-carrito" class="lista-carrito">
+      <p class="carrito-vacio">Tu carrito está vacío.</p>
+    </div>
+    <div class="carrito-total">
+      <span>Total:</span>
+      <span id="total-carrito">$0</span>
+    </div>
+  </div>
+  <div id="overlay-carrito" class="overlay-carrito"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
