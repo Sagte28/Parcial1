@@ -1,12 +1,12 @@
 const productos = [
-  { id: 1, nombre: "Labial Mate Rosa Nude", categoria: "Maquillaje para labios", precio: 28000, imagen: "img/p1.png" },
-  { id: 2, nombre: "Labial Líquido Rojo Pasión", categoria: "Maquillaje para labios", precio: 32000, imagen: "img/p2.png" },
-  { id: 3, nombre: "Paleta de Sombras Sunset", categoria: "Sombras", precio: 45000, imagen: "img/p3.png" },
-  { id: 4, nombre: "Sombra Individual Dorada", categoria: "Sombras", precio: 18000, imagen: "img/p4.png" },
-  { id: 5, nombre: "Set de Brochas x5", categoria: "Brochas y Aplicadores", precio: 55000, imagen: "img/p5.png" },
-  { id: 6, nombre: "Brocha para Base", categoria: "Brochas y Aplicadores", precio: 21000, imagen: "img/p6.png" },
-  { id: 7, nombre: "Delineador Líquido Negro", categoria: "Maquillaje para ojos", precio: 24000, imagen: "img/p7.png" },
-  { id: 8, nombre: "Máscara de Pestañas Volumen", categoria: "Maquillaje para ojos", precio: 30000, imagen: "img/p8.png" },
+  { id: 1, nombre: "Labial Mate Rosa Nude", categoria: "Maquillaje para labios", precio: 28000, imagen: "img/p1.jpg" },
+  { id: 2, nombre: "Labial Líquido Rojo Pasión", categoria: "Maquillaje para labios", precio: 32000, imagen: "img/p2.jpg" },
+  { id: 3, nombre: "Paleta de Sombras Sunset", categoria: "Sombras", precio: 45000, imagen: "img/p3.jpg" },
+  { id: 4, nombre: "Sombra Individual Dorada", categoria: "Sombras", precio: 18000, imagen: "img/p4.jpg" },
+  { id: 5, nombre: "Set de Brochas x5", categoria: "Brochas y Aplicadores", precio: 55000, imagen: "img/p5.jpg" },
+  { id: 6, nombre: "Brocha para Base", categoria: "Brochas y Aplicadores", precio: 21000, imagen: "img/p6.jpg" },
+  { id: 7, nombre: "Delineador Líquido Negro", categoria: "Maquillaje para ojos", precio: 24000, imagen: "img/p7.jpg" },
+  { id: 8, nombre: "Máscara de Pestañas Volumen", categoria: "Maquillaje para ojos", precio: 30000, imagen: "img/p8.jpg" },
 ];
 
 let carrito = [];
