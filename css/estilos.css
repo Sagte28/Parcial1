@@ -74,7 +74,6 @@ section > h2 {
   font-weight: 600;
 }
 
-/* ---------- Header ---------- */
 header {
   display: flex;
   align-items: center;
@@ -176,7 +175,6 @@ header h1 {
   cursor: pointer;
 }
 
-/* ---------- Nav de categorías ---------- */
 #nav-principal {
   display: flex;
   gap: 1.8rem;
@@ -198,7 +196,6 @@ header h1 {
   color: var(--rosa);
 }
 
-/* ---------- Hero ---------- */
 .hero {
   text-align: center;
   padding-top: 3.5rem;
@@ -242,7 +239,6 @@ header h1 {
   background-color: var(--rosa-oscuro);
 }
 
-/* ---------- Catálogo: cuadrícula de tarjetas con foto ---------- */
 #catalogo > p {
   color: var(--gris);
   margin-bottom: 1.75rem;
@@ -323,7 +319,6 @@ header h1 {
   color: var(--gris);
 }
 
-/* ---------- Nosotros ---------- */
 .nosotros-contenido {
   display: flex;
   gap: 2.5rem;
@@ -352,7 +347,6 @@ header h1 {
   font-weight: 600;
 }
 
-/* ---------- Tabla de envíos ---------- */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -376,7 +370,6 @@ th {
   background-color: #fdeef2;
 }
 
-/* ---------- Formulario de contacto ---------- */
 #form-contacto {
   display: flex;
   flex-direction: column;
@@ -448,7 +441,6 @@ input:focus, select:focus, textarea:focus {
   color: #c62828;
 }
 
-/* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 2.2rem 1.5rem;
@@ -461,7 +453,6 @@ footer p + p {
   margin-top: 0.5rem;
 }
 
-/* ---------- Carrito lateral ---------- */
 .carrito-drawer {
   position: fixed;
   top: 0;
@@ -565,7 +556,6 @@ footer p + p {
   display: block;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 700px) {
   header {
     justify-content: space-between;

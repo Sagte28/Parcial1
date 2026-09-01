@@ -170,7 +170,6 @@ document.querySelector("#btn-carrito").addEventListener("click", abrirCarrito);
 document.querySelector("#btn-cerrar-carrito").addEventListener("click", cerrarCarrito);
 document.querySelector("#overlay-carrito").addEventListener("click", cerrarCarrito);
 
-// ---------- Búsqueda dinámica ----------
 document.querySelector("#buscador").addEventListener("input", (evento) => {
   terminoBusqueda = evento.target.value.trim();
   renderizarCatalogo();
